@@ -406,9 +406,12 @@ h6 {
 }
 
 .portfolio-image {
-    height: 192px;
     background: linear-gradient(135deg, rgba(212, 162, 76, 0.2), rgba(45, 36, 22, 0.1));
     transition: background 0.3s;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    width: 100%;
+
 }
 
 .portfolio-card:hover .portfolio-image {
