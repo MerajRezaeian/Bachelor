@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Manager</title>
+        <meta name="description" content="An AI tool for project management and enhancing your productivity">
+        <meta name="author" content="AI Manager">
+
+        <meta property="og:title" content="AI Manager">
+        <meta property="og:description" content="An AI tool for project management and enhancing your productivity">
+        <meta property="og:type" content="website">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!-- Mobile Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="header-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <div class="logo-icon">A.M</div>
+                        <span class="logo-text">AI Manager</span>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="btn btn-primary btn-sm">Start Free Trial</button>
+
+                    <!-- Hamburger Menu -->
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu -->
+                <nav class="mobile-menu" id="mobileMenu">
+                    <a href="#features" class="menu-item">Features</a>
+                    <a href="#about" class="menu-item">About</a>
+                    <a href="#projects" class="menu-item">Projects</a>
+                    <a href="#contact" class="menu-item">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Work Smarter,<br>
+                            <span class="text-primary">Not Harder</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Streamline your projects, boost productivity, and achieve more with Novar.org's intelligent
+                            way to manage your work
+                        </p>
+
+                        <!-- Email CTA -->
+                        <div class="hero-cta">
+                            <input type="email" placeholder="Email Address*" class="input" id="emailInput" required>
+                            <button class="btn btn-primary btn-lg">
+                                Start Free Trial
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- Trust Indicator -->
+                        <p class="trust-text">Trusted by 1,000+ Teams Worldwide</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Everything You Need to Succeed</h2>
+                        <p class="section-description">
+                            Powerful features designed to help teams work smarter and achieve more
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Lightning Fast</h3>
+                                <p class="feature-description">
+                                    Boost your productivity with intelligent automation and smart workflows
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Team Collaboration</h3>
+                                <p class="feature-description">
+                                    Seamlessly collaborate with your team in real-time from anywhere
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 20V10" />
+                                    <path d="M12 20V4" />
+                                    <path d="M6 20v-6" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Analytics & Insights</h3>
+                                <p class="feature-description">
+                                    Make data-driven decisions with powerful analytics and reporting
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h3 class="feature-title">Enterprise Security</h3>
+                                <p class="feature-description">
+                                    Bank-level security to keep your data safe and compliant
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Preview -->
+            <section id="projects" class="dashboard-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Streamline Your Projects</h2>
+                        <p class="section-description">
+                            Manage tasks, track progress, and collaborate with your team all in one place
+                        </p>
+                    </div>
+
+                    <div class="dashboard-preview">
+                        <div class="dashboard-mockup">
+                            <div class="dashboard-header">
+                                <div class="window-controls">
+                                    <span class="control control-red"></span>
+                                    <span class="control control-yellow"></span>
+                                    <span class="control control-green"></span>
+                                </div>
+                            </div>
+
+                            <div class="dashboard-content">
+                                <div class="dashboard-main">
+                                    <div class="task-item">
+                                        <div class="task-checkbox"></div>
+                                        <div class="task-text"></div>
+                                        <div class="task-badge"></div>
+                                    </div>
+                                    <div class="task-item">
+                                        <div class="task-checkbox"></div>
+                                        <div class="task-text"></div>
+                                        <div class="task-badge"></div>
+                                    </div>
+                                    <div class="task-item">
+                                        <div class="task-checkbox"></div>
+                                        <div class="task-text"></div>
+                                        <div class="task-badge"></div>
+                                    </div>
+                                    <div class="task-item">
+                                        <div class="task-checkbox"></div>
+                                        <div class="task-text"></div>
+                                        <div class="task-badge"></div>
+                                    </div>
+                                    <div class="task-item">
+                                        <div class="task-checkbox"></div>
+                                        <div class="task-text"></div>
+                                        <div class="task-badge"></div>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-sidebar">
+                                    <div class="sidebar-card sidebar-card-1"></div>
+                                    <div class="sidebar-card sidebar-card-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-glow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section id="about" class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Active Users</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">50K+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">99.9%</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section id="contact" class="cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 class="cta-title">Ready to Transform Your Workflow?</h2>
+                        <p class="cta-description">
+                            Join thousands of teams already working smarter with AI Manager
+                        </p>
+
+                        <button class="btn btn-white btn-lg">
+                            Start Your Free Trial
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+
+                        <p class="cta-small-text">
+                            No credit card required • 14-day free trial • Cancel anytime
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <div class="logo-icon">A.M</div>
+                            <span class="logo-text">AI Manager</span>
+                        </div>
+                        <p class="footer-description">
+                            Work smarter, not harder with intelligent project management
+                        </p>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3 class="footer-heading">Product</h3>
+                            <ul class="footer-list">
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Security</a></li>
+                                <li><a href="#">Roadmap</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="footer-heading">Company</h3>
+                            <ul class="footer-list">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h3 class="footer-heading">Resources</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Community</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="footer-bottom">
+                    <p class="copyright">© 2025 AI Manager. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
