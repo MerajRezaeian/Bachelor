@@ -231,5 +231,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const statsSection = document.querySelector('.stats-section');
     if (statsSection) statsObserver.observe(statsSection);
 });
+const backToTop = document.querySelector('.back-to-top');
+
+// Show button after scrolling 30% of page height
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (scrollPosition > pageHeight * 0.2) {
+        backToTop.classList.add('show');
+    } else {
+        backToTop.classList.remove('show');
+    }
+});
+
+// Smooth scroll to top
+backToTop.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
 
 console.log('AI Manager loaded successfully! 🚀');

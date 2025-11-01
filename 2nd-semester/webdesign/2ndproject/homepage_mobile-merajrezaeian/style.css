@@ -711,6 +711,51 @@ body {
     }
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(16, 100%, 60%);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+    /* hidden by default */
+    z-index: 9999;
+    transition: opacity 0.3s;
+}
+
+.back-to-top.show {
+    display: block;
+    /* show when scrolled enough */
+    opacity: 1;
+}
+
+.back-to-top:hover {
+    background-color: hsl(16, 88%, 41%);
+}
+
+
+/* Mobile optimization */
+@media (max-width: 480px) {
+    .back-to-top {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        font-size: 30px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+
 @media (min-width: 768px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
