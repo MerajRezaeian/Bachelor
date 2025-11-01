@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 const backToTop = document.querySelector('.back-to-top');
 
-// Show button after scrolling 30% of page height
+// Show button after scrolling 20% of page height
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
     const pageHeight = document.documentElement.scrollHeight - window.innerHeight;

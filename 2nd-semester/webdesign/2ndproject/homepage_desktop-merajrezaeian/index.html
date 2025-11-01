@@ -340,11 +340,22 @@
         </footer>
 
         <script>
-            document.querySelector('.back-to-top')?.addEventListener('click', (e) => {
+            const backToTopBtn = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', () => {
+                const scrollPos = window.scrollY;
+                const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+                // Show button after 20% scroll
+                if (scrollPos > pageHeight * 0.2) {
+                    backToTopBtn.style.display = 'block';
+                } else {
+                    backToTopBtn.style.display = 'none';
+                }
+            });
+            // Smooth scroll to top
+            backToTopBtn.addEventListener('click', e => {
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
-
         </script>
     </body>
 

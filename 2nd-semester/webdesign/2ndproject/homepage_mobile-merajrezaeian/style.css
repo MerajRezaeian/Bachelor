@@ -721,7 +721,7 @@ body {
     color: white;
     text-align: center;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 30px;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -730,6 +730,7 @@ body {
     /* hidden by default */
     z-index: 9999;
     transition: opacity 0.3s;
+    text-decoration: none;
 }
 
 .back-to-top.show {

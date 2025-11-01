@@ -693,26 +693,30 @@ h6 {
     background-color: rgba(245, 239, 231, 0.2);
 }
 
+/* Back-to-top button */
 .back-to-top {
     position: fixed;
+    /* float above content */
     bottom: 20px;
     right: 20px;
-    width: 48px;
-    height: 48px;
-    background-color: #4b2e05;
+    width: 50px;
+    height: 50px;
+    background-color: #5C4033;
     /* dark brown */
-    color: #fff;
-    /* white arrow */
-    border-radius: 50%;
+    color: white;
     text-align: center;
-    line-height: 48px;
-    font-size: 22px;
-    font-weight: bold;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: none;
+    /* hidden by default */
+    z-index: 9999;
+    transition: background-color 0.3s ease;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    z-index: 1000;
 }
+
 
 .back-to-top:hover {
     background-color: #3b2304;
